@@ -14,7 +14,7 @@
        URL: local.google.com
 
     - name:  Printing value of the variable which is not declared
-      ansible.builtin.debug:
+      debug:
         msg: Name of the car is {{CARNAME}}   
 
 
