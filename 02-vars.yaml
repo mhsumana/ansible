@@ -1,0 +1,8 @@
+- name: Demo on using variables on playbook
+  hosts: all
+  vars: 
+   URL: play.google.com
+  tasks:
+    - name:  Printing the value of variable
+      debug:
+        msg: Value of the URL is {{URL}}
