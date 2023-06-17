@@ -12,6 +12,6 @@
 - name: Play2  
   hosts: prod 
   tasks:
-    - name: Printing Hello From Play2
+    - name: Printing Hai From Play2
       ansible.builtin.debug:
         msg: Hello from play2 of task1
