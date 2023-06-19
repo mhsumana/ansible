@@ -5,7 +5,7 @@
   vars_files:
   - dev.vars.yml
   vars_prompt:
-    -name: URLNAME
+  - name: URLNAME
     prompt: Enter the URLNAME
   tasks:
     - name:  Printing the value of variable
