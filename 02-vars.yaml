@@ -5,7 +5,7 @@
   vars_files:
   - dev.vars.yml
   vars_prompt:
-   -name: URLNAME
+    -name: URLNAME
     prompt: Enter the URLNAME
   tasks:
     - name:  Printing the value of variable
@@ -29,7 +29,7 @@
     - name:  Printing the prompt variable
       debug:
         msg: Url from the prompt variable is {{URLNAME}}
-        
+
 
 # Variables precedence
 # CLI variables> local variables > File variables > Global variables
