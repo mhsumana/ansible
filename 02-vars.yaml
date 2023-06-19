@@ -17,8 +17,18 @@
       debug:
         msg: Name of the car is {{CARNAME}}   
 
+    - name:  Demo to show quotes
+      debug:
+        msg: "{{URL}}" 
 
-# local variables > Global variables
+    - name:  Printing prompt variables
+      debug:
+        msg: URL from the prompt variable is {{URLNAME}} 
+
+
+
+
+# CLI variables> local variables > Global variables
 
 # If you try to print the variables which is not declared, it will throw an error.
   
