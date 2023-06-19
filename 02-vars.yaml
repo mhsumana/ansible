@@ -29,6 +29,7 @@
     - name:  Printing the prompt variable
       debug:
         msg: Url from the prompt variable is {{URLNAME}}
+        
 
 # Variables precedence
 # CLI variables> local variables > File variables > Global variables
