@@ -4,6 +4,9 @@
    URL: play.google.com
   vars_files:
   - dev.vars.yml
+  vars_prompt:
+   -name: URLNAME
+    prompt: Enter the URLNAME
   tasks:
     - name:  Printing the value of variable
       debug:
@@ -23,7 +26,12 @@
       debug:
         msg: "{{URL}}" 
 
-# CLI variables> local variables > Global variables
+    - name:  Printing the prompt variable
+      debug:
+        msg: Url from the prompt variable is {{URLNAME}}
+
+# Variables precedence
+# CLI variables> local variables > File variables > Global variables
 
 # If you try to print the variables which is not declared, it will throw an error.
   
