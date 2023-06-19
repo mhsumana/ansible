@@ -2,6 +2,8 @@
   hosts: all
   vars:                            # Global variables : Variable can be accessed by all the tasks of the play      
    URL: play.google.com
+  vars_files:
+   dev.vars.yml
   tasks:
     - name:  Printing the value of variable
       debug:
@@ -20,13 +22,6 @@
     - name:  Demo to show quotes
       debug:
         msg: "{{URL}}" 
-
-    - name:  Printing prompt variables
-      debug:
-        msg: URL from the prompt variable is {{URLNAME}} 
-
-
-
 
 # CLI variables> local variables > Global variables
 
