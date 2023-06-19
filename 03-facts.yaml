@@ -5,8 +5,8 @@
   tasks:
     - name:  Printing the fact
       ansible.builtin.debug:
-        msg: ansible_distribution is {{ansible_distribution}}
+        msg: ansible_distribution is {{ ansible_distribution }}
 
     - name:  Printing the macAddress of the machine
       ansible.builtin.debug:
-        msg: macAddress is {{ansible_default_ip4.macaddress}}
+        msg: macAddress is {{ ansible_default_ipv4.macaddress }}
