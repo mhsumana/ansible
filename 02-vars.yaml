@@ -3,7 +3,7 @@
   vars:                            # Global variables : Variable can be accessed by all the tasks of the play      
    URL: play.google.com
   vars_files:
-   dev.vars.yml
+  - dev.vars.yml
   tasks:
     - name:  Printing the value of variable
       debug:
